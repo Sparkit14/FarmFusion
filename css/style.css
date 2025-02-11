@@ -67,6 +67,28 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
 @import url(gradient.css);
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
+/* ==============================
+  0. Apex Does Things
+=========================== */
+.tp-caption.sfb.tp-resizeme.caption-h1 {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.tp-caption.sfb.tp-resizeme.caption-p {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.sec-title h2 span {
+  color: #f57d26;
+}
+
 
 
 /* ==============================
@@ -75,11 +97,11 @@
 
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: .02em;
-  background-color: #10151B;
+  background-color: #f3ead3;
 }
 img {
   max-width: 100%;
@@ -96,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alegreya', sans-serif;
+  font-family: 'Unbounded', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -121,12 +143,12 @@ li {
 .thm-btn {
   border: none;
   outline: none;
-  background: #0770fa;
+  background: #f3ead3;
   font-size: 14px;
   line-height: 28px;
-  color: #C0C0C0;
+  color: #f57d26;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   padding: 10px 0px;
   padding-left: 20px;
@@ -216,15 +238,18 @@ li {
 .sec-title {
   margin-bottom: 50px;
   margin: 0 0 0 20px;
+  color: #f57d26;
 }
 .sec-title h2 {
   margin-top: -9px;
+  color: #f57d26;
+
 }
 .sec-title h2:after {
   content: '';
   width: 55px;
   height: 3px;
-  background:#4ed500 ;
+  background:#dfa000 ;
   display: block;
   margin-top: 13px;
 }
@@ -232,22 +257,35 @@ li {
   display: block;
   font-size: 30px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #93b259;
   text-transform: uppercase;
 }
 .sec-title p {
-  color: #C0C0C0;
+  color: #dfa000;
   margin: 0;
   margin-top: 20px;
 }
+
+.sec-title ul {
+  color: #dfa000;
+}
+
+.fa.fa-arrow-circle-right {
+  color: #dfa000;
+}
+
+.bulleted-list li {
+  color: #dfa000;
+}
+
 .list-item li {
-  color:  #C0C0C0;
+  color:  #dfa000;
   line-height: 34px;
 }
 .list-item li:before {
   content: '\f0a9';
   font-family: 'FontAwesome';
-  color: #23f508;
+  color: #dfa000;
   margin-right: 10px;
 }
 
@@ -458,7 +496,7 @@ li {
 #header .logo {
   -webkit-transition: all .5s ease;
           transition: all .5s ease;
-          
+
 width: 100%;
 text-align: center;
 display: inline-block;
@@ -744,7 +782,7 @@ display: inline-block;
   content: '';
   background: #5cf503;
   right: 100%;
-  width: 2500px; 
+  width: 2500px;
   top: 0;
   height: 100%;
   -webkit-transition: all .3s ease;
@@ -1018,7 +1056,7 @@ display: inline-block;
 }
 #header2.stricky-fixed .logo {
   padding: 10px 0;
-  
+
 }
 #header2.stricky-fixed .logo img {
   width: 85%;
@@ -1029,7 +1067,7 @@ display: inline-block;
   width: 100%;
   display: inline-block;
   text-align: center;
-  
+
 }
 #header2 .nav-holder .nav-footer ul.nav > li {
   padding: 38px 0;
@@ -1173,6 +1211,10 @@ display: inline-block;
 .welcome-services {
   margin-top: -80px;
   padding-bottom: 80px;
+  background-color: #f3ead3;
+}
+.welcome-services.home-one {
+  background-color: #f3ead3;
 }
 .welcome-services .service-text p {
   margin: 0;
@@ -1311,7 +1353,7 @@ display: inline-block;
   color: #1FB5C7;
 }
 .featured-services.style-two .single-featured-service .icon-box i:before {
-  color: #1FB5C7; 
+  color: #1FB5C7;
 }
 .featured-services.style-two .single-featured-service p {
   color: #ABC3D8;
@@ -2131,7 +2173,7 @@ display: inline-block;
   margin: 0;
 }
 #contact-page-google-map {
-  margin-top: 80px; 
+  margin-top: 80px;
   height: 400px;
   padding: 6px;
   width: 100%;
@@ -3047,7 +3089,7 @@ display: inline-block;
   background: url(../images/rqa-bg.jpeg) 0 0 no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 .request-qoute.has-overlay:before {
@@ -3081,7 +3123,7 @@ display: inline-block;
   right: 10px;
   bottom: 0;
   background: #081C34;
-  opacity: .7;  
+  opacity: .7;
 }
 .request-qoute.has-overlay .has-overlay:after {
   content: '';
@@ -3092,7 +3134,7 @@ display: inline-block;
   top: 0;
 
   background: #081C34;
-  opacity: .8;  
+  opacity: .8;
 }
 .request-qoute.has-overlay .testimonial-box .content-box {
   background-color: transparent;
